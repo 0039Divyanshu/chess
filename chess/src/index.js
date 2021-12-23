@@ -1,9 +1,8 @@
 import React from "react";
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-ReactDOM.render(
-  <>
-    <h1>Knights Royale</h1>
-  </>,
-  document.getElementById("root")
-);
+
+ReactDOM.render(<App/>, document.getElementById("root"));
