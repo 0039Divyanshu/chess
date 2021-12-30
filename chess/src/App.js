@@ -7,7 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import GoogleLoginPage from "./Login Page/GoogleLogin";
-
+import ListOfMovesTable from "./ListOfMovesTable/ListOfMovesTable";
 const App = () => {
   const [auth, setAuth] = useState(false);
   const [token, setToken] = useState(null);
@@ -18,7 +18,8 @@ const App = () => {
   return (
       <Router>
       <Routes>
-        <Route path="/*" element={<GoogleLoginPage></GoogleLoginPage>} />
+        <Route path="/" element={<GoogleLoginPage/>} />
+        <Route path="/send-a-move" element={<ListOfMovesTable/>} />
         </Routes>
      </Router>
   );
