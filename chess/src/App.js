@@ -7,6 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import GoogleLoginPage from "./Login Page/GoogleLogin";
+import Navbar from "./Navbar/Navbar";
 
 const App = () => {
   const [auth, setAuth] = useState(false);
@@ -16,11 +17,14 @@ const App = () => {
   const [showLoader, setShowLoader] = useState(true);
 
   return (
-      <Router>
-      <Routes>
-        <Route path="/*" element={<GoogleLoginPage></GoogleLoginPage>} />
+    <>
+      <Navbar />
+      {/* <Router>
+        <Routes>
+          <Route path="/*" element={<GoogleLoginPage></GoogleLoginPage>} />
         </Routes>
-     </Router>
+      </Router> */}
+    </>
   );
 };
 
