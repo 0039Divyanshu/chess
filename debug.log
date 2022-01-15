@@ -1,2 +1,5 @@
 [0111/164319.212:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+<<<<<<< HEAD
 [0111/164804.857:ERROR:registration_protocol_win.cc(102)] CreateFile: The system cannot find the file specified. (0x2)
+=======
+>>>>>>> 88885a2a0ef584b6d1e6ea91eab75e7dff6cf67f
