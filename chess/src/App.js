@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import GoogleLoginPage from "./Login Page/GoogleLogin";
 import Navbar from "./Navbar/Navbar";
+import Login from "./Login Page/Login";
 
 const App = () => {
   const [auth, setAuth] = useState(false);
@@ -19,11 +20,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      {/* <Router>
-        <Routes>
-          <Route path="/*" element={<GoogleLoginPage></GoogleLoginPage>} />
-        </Routes>
-      </Router> */}
+      <Router>
+        <Login />
+      </Router>
     </>
   );
 };
