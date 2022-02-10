@@ -9,6 +9,7 @@ import {
 import GoogleLoginPage from "./Login Page/GoogleLogin";
 import Navbar from "./Navbar/Navbar";
 import Login from "./Login Page/Login";
+import Container from "./Container/Container";
 
 const App = () => {
   const [auth, setAuth] = useState(false);
@@ -20,9 +21,10 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Router>
+      <Container />
+      {/* <Router>
         <Login />
-      </Router>
+      </Router> */}
     </>
   );
 };
