@@ -21,7 +21,11 @@ const App = () => {
   return (
     <>
       <Navbar />
+
+      {/* For main (chess) page */}
       <Container />
+
+      {/* For Login Page */}
       {/* <Router>
         <Login />
       </Router> */}
